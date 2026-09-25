@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { services } from '../data/services';
+
 const capabilities = [
   { num: '01', label: 'Strategy' },
   { num: '02', label: 'Delivery' },
@@ -21,14 +23,7 @@ const techAreas = [
   { icon: '📊', label: 'Technology & Project Management' },
 ];
 
-const services = [
-  { icon: '📊', title: 'IT Project Management', body: 'Planning, coordination, execution, and delivery of technology projects.' },
-  { icon: '🧭', title: 'Technology Consulting', body: 'Helping organizations make informed technology decisions and implement effective solutions.' },
-  { icon: '🤖', title: 'Artificial Intelligence & Machine Learning', body: 'Developing intelligent systems and applying AI to real-world problems.' },
-  { icon: '🛡️', title: 'Cybersecurity', body: 'Helping organizations protect systems, data, and digital infrastructure.' },
-  { icon: '☁️', title: 'Cloud & DevOps', body: 'Building scalable infrastructure and improving software delivery through modern cloud and DevOps practices.' },
-  { icon: '📁', title: 'Software Development', body: 'Creating modern digital products, applications, platforms, and technology solutions.' },
-];
+
 
 export default function Home() {
   return (
@@ -128,14 +123,14 @@ export default function Home() {
           </div>
           <div className="card-grid">
             {services.map((s) => (
-              <div className="service-card" key={s.title}>
+              <Link to={`/services/${s.slug}`} className="service-card related-card" key={s.slug}>
                 <div className="icon-box">{s.icon}</div>
                 <div>
                   <h3>{s.title}</h3>
-                  <p>{s.body}</p>
+                  <p>{s.summary}</p>
                 </div>
-                <Link to="/services" className="explore-link">EXPLORE →</Link>
-              </div>
+                <span className="explore-link">EXPLORE →</span>
+              </Link>
             ))}
           </div>
         </div>

@@ -1,19 +1,6 @@
 import { Link } from 'react-router-dom';
-const services = [
-  { icon: '📊', title: 'IT Project Management', body: 'Planning, coordination, execution, and delivery of technology projects.' },
-  { icon: '🧭', title: 'Technology Consulting', body: 'Helping organizations make informed technology decisions and implement effective solutions.' },
-  { icon: '🤖', title: 'Artificial Intelligence & Machine Learning', body: 'Developing intelligent systems and applying AI to real-world problems.' },
-  { icon: '🛡️', title: 'Cybersecurity', body: 'Helping organizations protect systems, data, and digital infrastructure.' },
-  { icon: '☁️', title: 'Cloud & DevOps', body: 'Building scalable infrastructure and improving software delivery through modern cloud and DevOps practices.' },
-  { icon: '📁', title: 'Software Development', body: 'Creating modern digital products, applications, platforms, and technology solutions.' },
-];
-
-const steps = [
-  { num: '01', title: 'Discover' },
-  { num: '02', title: 'Plan' },
-  { num: '03', title: 'Build' },
-  { num: '04', title: 'Deliver' },
-];
+import Reveal from '../components/Reveal';
+import { services, processSteps } from '../data/services';
 
 export default function Services() {
   return (
@@ -34,15 +21,16 @@ export default function Services() {
       <section style={{ background: '#fff' }}>
         <div className="container">
           <div className="card-grid">
-            {services.map((s) => (
-              <div className="service-card" key={s.title}>
+            {services.map((s, i) => (
+              <Reveal as={Link} to={`/services/${s.slug}`} key={s.slug} delay={i * 60} className="service-card related-card">
+                <span className="capability-index" style={{ marginBottom: 4 }}>{String(i + 1).padStart(2, '0')}</span>
                 <div className="icon-box">{s.icon}</div>
                 <div>
                   <h3>{s.title}</h3>
-                  <p>{s.body}</p>
+                  <p>{s.summary}</p>
                 </div>
-                <Link to="/contact" className="explore-link">GET STARTED →</Link>
-              </div>
+                <span className="explore-link">LEARN MORE →</span>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -53,7 +41,7 @@ export default function Services() {
           <div className="section-label on-dark"><span className="accent" /><span>HOW WE WORK</span></div>
           <h2 className="heading-xl" style={{ color: '#fff' }}>Our Process</h2>
           <div className="steps">
-            {steps.map((s) => (
+            {processSteps.map((s) => (
               <div className="step" key={s.num} style={{ borderTopColor: '#17365f' }}>
                 <span className="num">{s.num}</span>
                 <h4 style={{ color: '#fff' }}>{s.title}</h4>
