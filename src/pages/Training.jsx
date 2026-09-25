@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const techAreas = [
   { icon: '🧠', label: 'AI & Machine Learning' },
   { icon: '🛡️', label: 'Cybersecurity' },
@@ -19,7 +20,7 @@ export default function Training() {
               GDXT provides practical technology training designed to help students and professionals develop relevant skills in today's digital economy.
             </p>
             <div className="hero-actions">
-              <a href="/contact" className="btn btn-primary">Enroll Now →</a>
+              <Link to="/contact" className="btn btn-primary">Enroll Now →</Link>
             </div>
           </div>
           <div className="hero-visual" style={{ height: 340 }} />
@@ -57,7 +58,7 @@ export default function Training() {
               <span>Cloud & DevOps</span>
               <span>Full-Stack</span>
             </div>
-            <a href="/contact" className="btn btn-primary">Apply Now →</a>
+            <Link to="/contact" className="btn btn-primary">Apply Now →</Link>
           </div>
         </div>
       </section>
@@ -68,7 +69,7 @@ export default function Training() {
             <h2>Ready to Build New Skills?</h2>
             <p>Join a training program designed around real technology roles and real career outcomes.</p>
           </div>
-          <a href="/contact" className="btn btn-white">Get Started →</a>
+          <Link to="/contact" className="btn btn-white">Get Started →</Link>
         </div>
       </section>
     </>

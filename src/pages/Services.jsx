@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const services = [
   { icon: '📊', title: 'IT Project Management', body: 'Planning, coordination, execution, and delivery of technology projects.' },
   { icon: '🧭', title: 'Technology Consulting', body: 'Helping organizations make informed technology decisions and implement effective solutions.' },
@@ -40,7 +41,7 @@ export default function Services() {
                   <h3>{s.title}</h3>
                   <p>{s.body}</p>
                 </div>
-                <a href="/contact" className="explore-link">GET STARTED →</a>
+                <Link to="/contact" className="explore-link">GET STARTED →</Link>
               </div>
             ))}
           </div>
@@ -68,7 +69,7 @@ export default function Services() {
             <h2>Let's Build What's Next.</h2>
             <p>Whether you need technology expertise, project support, consulting, or professional training, GDXT is ready to help.</p>
           </div>
-          <a href="/contact" className="btn btn-white">Get Started →</a>
+          <Link to="/contact" className="btn btn-white">Get Started →</Link>
         </div>
       </section>
     </>

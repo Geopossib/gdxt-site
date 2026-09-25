@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const values = [
   'Integrity in every engagement',
   'Practical, real-world solutions',
@@ -60,7 +61,7 @@ export default function About() {
             <h2>Let's Build What's Next.</h2>
             <p>Whether you need technology expertise, project support, consulting, or professional training, GDXT is ready to help.</p>
           </div>
-          <a href="/contact" className="btn btn-white">Get Started →</a>
+          <Link to="/contact" className="btn btn-white">Get Started →</Link>
         </div>
       </section>
     </>

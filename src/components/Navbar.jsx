@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const links = [
@@ -24,7 +24,7 @@ export default function Navbar() {
             </NavLink>
           ))}
         </nav>
-        <a href="/contact" className="btn btn-primary">Get Started →</a>
+        <Link to="/contact" className="btn btn-primary">Get Started →</Link>
         <button
           className="nav-menu-btn"
           aria-label="Toggle navigation menu"
@@ -42,7 +42,7 @@ export default function Navbar() {
             {l.label}
           </NavLink>
         ))}
-        <a href="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>Get Started →</a>
+        <Link to="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>Get Started →</Link>
       </nav>
     </header>
   );

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const capabilities = [
   { num: '01', label: 'Strategy' },
   { num: '02', label: 'Delivery' },
@@ -41,8 +42,8 @@ export default function Home() {
               GDXT delivers technology solutions, professional training, and IT project management for organizations and individuals building for the future.
             </p>
             <div className="hero-actions">
-              <a href="/services" className="btn btn-primary">Work With GDXT →</a>
-              <a href="/services" className="btn btn-outline">Explore Our Services →</a>
+              <Link to="/services" className="btn btn-primary">Work With GDXT →</Link>
+              <Link to="/services" className="btn btn-outline">Explore Our Services →</Link>
             </div>
           </div>
           <div className="hero-visual">
@@ -101,7 +102,7 @@ export default function Home() {
             <p className="body-text">
               GDXT provides practical technology training designed to help students and professionals develop relevant skills in today's digital economy.
             </p>
-            <a href="/training" className="btn btn-primary" style={{ marginTop: 24 }}>Explore Training →</a>
+            <Link to="/training" className="btn btn-primary" style={{ marginTop: 24 }}>Explore Training →</Link>
           </div>
           <div className="tech-grid">
             {techAreas.map((t) => (
@@ -133,7 +134,7 @@ export default function Home() {
                   <h3>{s.title}</h3>
                   <p>{s.body}</p>
                 </div>
-                <a href="/services" className="explore-link">EXPLORE →</a>
+                <Link to="/services" className="explore-link">EXPLORE →</Link>
               </div>
             ))}
           </div>
@@ -156,7 +157,7 @@ export default function Home() {
               <span>Cloud & DevOps</span>
               <span>Full-Stack</span>
             </div>
-            <a href="/training" className="btn btn-primary">Learn More →</a>
+            <Link to="/training" className="btn btn-primary">Learn More →</Link>
           </div>
         </div>
       </section>
@@ -167,7 +168,7 @@ export default function Home() {
             <h2>Let's Build What's Next.</h2>
             <p>Whether you need technology expertise, project support, consulting, or professional training, GDXT is ready to help.</p>
           </div>
-          <a href="/contact" className="btn btn-white">Get Started →</a>
+          <Link to="/contact" className="btn btn-white">Get Started →</Link>
         </div>
       </section>
     </>
