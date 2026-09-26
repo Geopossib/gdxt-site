@@ -14,7 +14,10 @@ export default function Services() {
               From strategic direction to dependable delivery and lasting capability—GDXT covers the full technology lifecycle.
             </p>
           </div>
-          <div className="hero-visual" style={{ height: 340 }} />
+          <div
+            className="hero-visual has-image"
+            style={{ height: 340, backgroundImage: "url('https://images.pexels.com/photos/4816921/pexels-photo-4816921.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1')" }}
+          />
         </div>
       </section>
 

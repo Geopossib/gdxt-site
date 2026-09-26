@@ -39,7 +39,10 @@ export default function ServiceDetail() {
               <Link to="/services" className="btn btn-outline">All Services →</Link>
             </div>
           </div>
-          <div className="hero-visual" style={{ height: 340 }}>
+          <div
+            className="hero-visual has-image"
+            style={{ height: 340, backgroundImage: `url('${service.heroImage}')` }}
+          >
             <div className="icon-box service-hero-icon">{service.icon}</div>
           </div>
         </div>

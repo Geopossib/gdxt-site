@@ -20,13 +20,19 @@ export default function About() {
               GDXT is a technology and professional development company helping organizations execute with confidence and people build skills that matter.
             </p>
           </div>
-          <div className="hero-visual" style={{ height: 340 }} />
+          <div
+            className="hero-visual has-image"
+            style={{ height: 340, backgroundImage: "url('https://images.pexels.com/photos/5833864/pexels-photo-5833864.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1')" }}
+          />
         </div>
       </section>
 
       <section>
         <div className="container two-col">
-          <div className="two-col-media" />
+          <div
+            className="two-col-media has-image"
+            style={{ backgroundImage: "url('https://images.pexels.com/photos/36706460/pexels-photo-36706460.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1000&fit=crop&dpr=1')" }}
+          />
           <div className="two-col-copy">
             <div className="section-label"><span className="accent" /><span>OUR STORY</span></div>
             <h2 className="heading-xl">Technology. Innovation. Execution.</h2>

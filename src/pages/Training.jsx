@@ -23,7 +23,10 @@ export default function Training() {
               <Link to="/contact" className="btn btn-primary">Enroll Now →</Link>
             </div>
           </div>
-          <div className="hero-visual" style={{ height: 340 }} />
+          <div
+            className="hero-visual has-image"
+            style={{ height: 340, backgroundImage: "url('https://images.pexels.com/photos/5990265/pexels-photo-5990265.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1')" }}
+          />
         </div>
       </section>
 
@@ -44,7 +47,10 @@ export default function Training() {
 
       <section style={{ background: '#fff', paddingBottom: 0 }}>
         <div className="container program">
-          <div className="program-visual" />
+          <div
+            className="program-visual has-image"
+            style={{ backgroundImage: "url('https://images.pexels.com/photos/29521529/pexels-photo-29521529.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1')" }}
+          />
           <div className="program-copy">
             <div className="section-label"><span className="accent" /><span>FEATURED PROGRAM</span></div>
             <h2 className="heading-xl" style={{ fontWeight: 400 }}>GDXT Tech Camp</h2>

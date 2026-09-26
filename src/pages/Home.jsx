@@ -41,7 +41,10 @@ export default function Home() {
               <Link to="/services" className="btn btn-outline">Explore Our Services →</Link>
             </div>
           </div>
-          <div className="hero-visual">
+          <div
+            className="hero-visual has-image"
+            style={{ backgroundImage: "url('https://images.pexels.com/photos/36706459/pexels-photo-36706459.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1000&fit=crop&dpr=1')" }}
+          >
             <div className="signal" />
             <div className="system-tags">
               <span>AI</span>
@@ -55,7 +58,10 @@ export default function Home() {
 
       <section>
         <div className="container two-col">
-          <div className="two-col-media" />
+          <div
+            className="two-col-media has-image"
+            style={{ backgroundImage: "url('https://images.pexels.com/photos/16323581/pexels-photo-16323581.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1000&fit=crop&dpr=1')" }}
+          />
           <div className="two-col-copy">
             <div className="section-label"><span className="accent" /><span>WHO WE ARE</span></div>
             <h2 className="heading-xl">Building Technology. Developing People. Delivering Results.</h2>
@@ -138,7 +144,10 @@ export default function Home() {
 
       <section style={{ background: '#fff', paddingBottom: 0 }}>
         <div className="container program">
-          <div className="program-visual" />
+          <div
+            className="program-visual has-image"
+            style={{ backgroundImage: "url('https://images.pexels.com/photos/8649999/pexels-photo-8649999.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1')" }}
+          />
           <div className="program-copy">
             <div className="section-label"><span className="accent" /><span>FEATURED PROGRAM</span></div>
             <h2 className="heading-xl" style={{ fontWeight: 400 }}>GDXT Tech Camp</h2>

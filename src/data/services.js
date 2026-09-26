@@ -2,6 +2,7 @@ export const services = [
   {
     slug: 'it-project-management',
     icon: '📊',
+    heroImage: 'https://images.pexels.com/photos/7376/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1',
     title: 'IT Project Management',
     tagline: 'PLANNING. COORDINATION. DELIVERY.',
     summary: 'Planning, coordination, execution, and delivery of technology projects.',
@@ -29,6 +30,7 @@ export const services = [
   {
     slug: 'technology-consulting',
     icon: '🧭',
+    heroImage: 'https://images.pexels.com/photos/5833874/pexels-photo-5833874.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1',
     title: 'Technology Consulting',
     tagline: 'STRATEGY. DECISIONS. IMPLEMENTATION.',
     summary: 'Helping organizations make informed technology decisions and implement effective solutions.',
@@ -56,6 +58,7 @@ export const services = [
   {
     slug: 'ai-machine-learning',
     icon: '🤖',
+    heroImage: 'https://images.pexels.com/photos/6424586/pexels-photo-6424586.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1',
     title: 'Artificial Intelligence & Machine Learning',
     tagline: 'INTELLIGENT SYSTEMS. REAL RESULTS.',
     summary: 'Developing intelligent systems and applying AI to real-world problems.',
@@ -83,6 +86,7 @@ export const services = [
   {
     slug: 'cybersecurity',
     icon: '🛡️',
+    heroImage: 'https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1',
     title: 'Cybersecurity',
     tagline: 'PROTECT. DETECT. RESPOND.',
     summary: 'Helping organizations protect systems, data, and digital infrastructure.',
@@ -110,6 +114,7 @@ export const services = [
   {
     slug: 'cloud-devops',
     icon: '☁️',
+    heroImage: 'https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1',
     title: 'Cloud & DevOps',
     tagline: 'SCALABLE. AUTOMATED. RELIABLE.',
     summary: 'Building scalable infrastructure and improving software delivery through modern cloud and DevOps practices.',
@@ -137,6 +142,7 @@ export const services = [
   {
     slug: 'software-development',
     icon: '📁',
+    heroImage: 'https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1',
     title: 'Software Development',
     tagline: 'BUILD. SHIP. SCALE.',
     summary: 'Creating modern digital products, applications, platforms, and technology solutions.',

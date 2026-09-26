@@ -7,12 +7,18 @@ export default function Contact() {
   return (
     <>
       <section className="hero page-hero" style={{ padding: 0 }}>
-        <div className="container" style={{ padding: '72px 0 0' }}>
-          <div className="hero-label">CONTACT</div>
-          <h1 style={{ fontSize: 48, margin: '0 0 16px', fontWeight: 400 }}>Let's Talk.</h1>
-          <p className="lead" style={{ marginBottom: 0 }}>
-            Whether you need technology expertise, project support, consulting, or professional training, GDXT is ready to help.
-          </p>
+        <div className="container hero-inner">
+          <div className="hero-copy">
+            <div className="hero-label">CONTACT</div>
+            <h1 style={{ fontSize: 48, fontWeight: 400 }}>Let's Talk.</h1>
+            <p className="lead" style={{ marginBottom: 0 }}>
+              Whether you need technology expertise, project support, consulting, or professional training, GDXT is ready to help.
+            </p>
+          </div>
+          <div
+            className="hero-visual has-image"
+            style={{ height: 340, backgroundImage: "url('https://images.pexels.com/photos/5833879/pexels-photo-5833879.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop&dpr=1')" }}
+          />
         </div>
       </section>
 

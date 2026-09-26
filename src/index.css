@@ -1109,3 +1109,43 @@ section.tight {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- HEADER / HERO IMAGES ---------- */
+.hero-visual {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-visual.has-image::before,
+.two-col-media.has-image::before,
+.program-visual.has-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2,23,57,0.35) 0%, rgba(2,23,57,0.78) 100%);
+}
+
+.two-col-media,
+.program-visual {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual > *:not(.has-image) {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-visual .signal,
+.hero-visual .system-tags,
+.hero-visual .service-hero-icon {
+  z-index: 2;
+}
